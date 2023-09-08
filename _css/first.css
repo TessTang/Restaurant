@@ -1,0 +1,424 @@
+body {
+    background-image: url(../img/background03.jpg);
+    background-position: center center;
+
+    opacity: 0.98;
+}
+
+
+
+.myDiv {
+    padding-top: 66px;
+    min-height: 100vh;
+}
+
+
+/* -NAV BAR- */
+.navBackground {
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.myNav {
+    list-style: none;
+}
+
+.myNav>li>a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px double white;
+    padding-bottom: 3px;
+    font-size: calc(0.7rem + 0.6vw);
+    text-align: center;
+}
+
+.myNav>li>a:hover {
+    color: rgb(185, 184, 184);
+    border-bottom: 3px dotted white;
+}
+
+/* -ALL */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+@font-face {
+    font-family: 'FiraSans-Book';
+    src: url('../font/fira-sans/FiraSans-Book.otf');
+}
+
+body {
+    font-family: 'Noto Sans TC', 'FiraSans-Book', sans-serif, cursive;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -carousel */
+.carousel-item>img {
+    object-fit: cover;
+    max-height: 90vh;
+    width: 100%;
+    opacity: 0.95;
+}
+
+.carousselInner {
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+
+
+/* Sale */
+
+#sale {
+    background-image: url(../img/frontCover02-.JPG);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.myTitle{
+width: 50vw;
+text-align: center;
+margin-left:auto;
+margin-right: auto;
+background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(236, 210, 43, 0.822) 80%, rgba(0,0,0,0) 100%);
+white-space: nowrap;
+}
+
+.forSale .d-flex > div {
+    width: 100%;
+    border: 2px double rgba(255, 255, 255, 0.76);
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+.forSale .d-flex > div > img {
+    display: block;
+    max-height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.forSale p {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    background: #ffff7769;
+    padding: 20px auto;
+}
+
+/* .forSale_name {
+    clip-path: polygon(13% 0, 0% 20%, 6% 50%, 0% 80%, 14% 100%, 46% 100%, 92% 98%, 100% 80%, 93% 51%, 100% 20%, 91% 1%, 49% 0);
+    background-color: rgba(255, 0, 0, 0.575);
+    padding: 10px 10px;
+    width: 85%;
+    margin: 2px auto;
+    text-shadow: black 0.1em 0.1em 0.2em;
+} */
+
+.forSale_name {
+    width: 85%;
+    margin: 2px auto;
+} 
+.forSale_name > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* menu */
+
+.leftCol {
+    text-align: center;
+    max-height: 100%;
+}
+
+.leftCol > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.menuPicture {
+
+    height: 13vh;
+    clip-path: circle(50% at 50% 50%);
+    /* margin: 0 auto; */
+}
+
+.menuRow {
+    flex-direction: column;
+    border-bottom: 3px dotted white;
+    font-size: calc(0.8rem + 0.3vw);
+    margin-bottom: 3px;
+}
+
+
+.menuPrice {
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.menuRow h5 {
+    margin: auto;
+    text-decoration: underline double rgba(255, 255, 0, 0.658);
+    text-underline-offset: 6px;
+}
+
+.menuRow p {
+    margin-top: 2%;
+    align-items: center;
+    color: lightgrey;
+}
+
+#pizzamenu, #friedmenu, #drinkmenu{
+    color: rgb(153, 152, 152);
+    background-color: black;
+}
+
+#pizzamenu:focus , #pizzamenu.nav-link.active,
+#friedmenu:focus , #drinkmenu:focus{
+    color: black;
+    background-color: #DEB150;
+}
+
+
+/* promotion */
+
+.event {
+    background-image: url(../img/event01-.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.event .d-flex > div {
+    width: 100%;
+    font-size: 20px;
+    background-color: #DEB150;
+    position: relative;
+}
+
+
+.event .d-flex > div::before {
+    border: 3.5px solid rgba(15, 6, 6, 0.507);
+    content: "";
+    position: absolute;
+    top: calc(0.7vw);
+    bottom: calc(0.7vw);
+    left: calc(0.7vw);
+    right: calc(0.7vw);
+}
+
+
+.event .d-flex > div > img {
+    display: block;
+    max-height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event .d-flex > div > .pb-5 {
+    margin-top: -1rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0.7987570028011204) 0%, rgba(222, 177, 80, 1) 14%);
+    color: black;
+}
+
+.event p {
+    padding: 20px auto;
+}
+
+.event_name {
+    color: black;
+    font-weight: bold;
+    background: #f5f58898;
+    padding: 20px;
+}
+
+/* booking */
+
+#booking {
+    background-image: url(../img/frontCover01.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.bookForm {
+    background-color: #DEB150;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 25px;
+    padding-bottom: 50px;
+    margin: auto;
+    border-radius: 30px;
+    border: 15px double rgba(0, 0, 0, 0.623);
+    z-index: 6;
+}
+
+#booking button:hover {
+    background-color: rgba(255, 0, 0, 0.651);
+}
+
+/* contact */
+
+#contactOur {
+    background-image: url(../img/location.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.contactinfo {
+    min-height: 60vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    border: 9px solid black;
+}
+
+
+.contactName {
+    font-size: 1.25rem;
+    color: #DEB150;
+    border-bottom: 4px double rgba(255, 255, 0, 0.575);
+}
+
+#contactOur p {
+    text-align: center;
+    margin-top: 6px;
+}
+
+
+#myBtn {
+    display: none; /*Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #DEB150; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .moveBig{
+font-size: 200px;
+color: rgb(175, 167, 167);
+  }
+
+  .move1{
+    transform: rotate(30deg); 
+    position: absolute; 
+    left: 30px; 
+    top: -10px;
+    z-index: 1;
+  }
+
+  .move12{
+    position: absolute; 
+    left: 0px; 
+    top: 0px;
+    z-index: 1;
+    animation-duration:4.0s !important;
+  }
+
+  .flag{
+    width: 150px;
+  }
+
+  .move3{
+    width: 50px;
+  }
+
+
+  svg{
+    font-size: 200px;
+    /* position: absolute;
+    right: 0;
+    bottom: 30px;
+    z-index: 1; */
+  }
+  .move2{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 1;
+  }
+
+  .saleImg{
+    width: 250px !important;
+    margin-top: 30px;
+  }
+
+
+  @media (max-width: 1600px){
+    .saleImg{
+        width: 150px !important;
+      }
+   }
+
+   .pigAni{
+    animation-name: pig1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+   }
+
+   @keyframes pig1 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(100%)}
+   }
+
+/* 隱藏下方滾軸，更改滾軸樣式 */
+
+   body{
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+background-color: #DEB150;
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(219, 219, 34, 0.349); 
+  }
+
+  .move13{
+    position: absolute; 
+    right: 10px; 
+    top: 50px;
+    z-index: 1;
+  }
+
+
+.confetti{
+    width: 150px;
+}
